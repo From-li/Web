@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    var div = document.querySelector('div')
+    var flag=true
+    div.onclick = function () {
+        // 小驼峰
+        if(flag==true){
+            this.style.backgroundColor = 'blue';
+            this.style.width = '500px'
+            this.style.height = '500px'
+            flag=false
+        }else {
+            this.style.backgroundColor = 'yellowgreen';
+            this.style.width = '300px'
+            this.style.height = '300px'
+            flag=true
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div><button id="ks">卡莎</button>
+    <button id="dm">刀妹</button></div>
+
+<img src="../images/kasha.jpg" alt="" width="300px" height="180px" title="卡莎">
+<script>
+    // 获取元素
+    var ks = document.getElementById('ks');
+    var dm = document.getElementById('dm');
+    var imgh = document.querySelector('img');
+    // 注册事件
+    ks.onclick = function () {
+        imgh.src = '../images/kasha.jpg';
+        imgh.title = '卡莎';
+    }
+    dm.onclick = function () {
+        imgh.src = '../images/daomei.jpg';
+        imgh.title = '刀妹';
+    }
+
+</script>
+
+
+</body>
+</html>

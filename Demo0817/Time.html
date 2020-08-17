@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="../images/hao/z.gif" alt="">
+<p>早上好</p>
+<script>
+    var date=new Date();
+    var p=document.querySelector('p');
+    var imgh = document.querySelector('img');
+    var hour=date.getHours();
+    if(hour<7){
+      imgh.src='../images/hao/z.gif';
+        p.innerHTML='早上好';
+    }else if(hour<12){
+        imgh.src='../images/hao/s.gif';
+        p.innerHTML='中午好';
+    }else if(hour<17){
+        imgh.src='../images/hao/x.gif';
+        p.innerHTML='下午好';
+    }else {
+        imgh.src='../images/hao/w.gif';
+        p.innerHTML='晚上好';
+    }
+</script>
+
+
+</body>
+</html>
